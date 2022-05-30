@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <tittle></tittle>
+        <tittle>Contact Book</tittle>
     </head>
     <body onload="fetchContacts()">
 
@@ -16,7 +16,7 @@
             document.getElementById("addContact").addEventListener('click', addContact);
 
             function fetchContacts(){
-                fetch(roothPath + "conroller/get-contacts/")
+                fetch(roothPath + "controller/get-contacts/")
                 .then(function(response){
                     return response.json();
                 })
